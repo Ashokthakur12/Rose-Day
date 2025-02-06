@@ -1,3 +1,3 @@
-function showRose() {
-    document.getElementById("rose").classList.remove("hidden");
+function showSurprise() {
+    document.getElementById("surprise").classList.remove("hidden");
 }
