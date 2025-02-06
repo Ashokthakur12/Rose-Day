@@ -1,3 +1,4 @@
 function showSurprise() {
-    document.getElementById("surprise").classList.remove("hidden");
+    const surprise = document.getElementById('surprise');
+    surprise.classList.add('show');
 }
