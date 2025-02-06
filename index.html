@@ -1,56 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Rose Day, Miral</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        #surprise {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s ease, transform 1s ease;
-        }
-        #surprise.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Rose Day</title>
 </head>
 <body>
     <div class="container">
-        <h1>🌹 Happy Rose Day 🌹</h1>
-        <p>May your life be as beautiful as a rose! 🌹💖</p>
-        <button onclick="showSurprise()">Click for a Surprise</button>
-        
-        <!-- Hidden surprise section -->
-        <div id="surprise">
-            <h1>🌹 Happy Rose Day, Miral! 🌹</h1>
-            <img src="https://media-hosting.imagekit.io//9d2d4dd4e7e9424a/1000131914.jpg" alt="Miral's Photo" class="profile">
-            <h2>Miral</h2>
-            <p>Here's a rose for you, Miral! 🌹</p>
-            
-            <!-- YouTube Video Embed -->
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/3EplzAeMREA" frameborder="0" allowfullscreen></iframe>
-            </div>
+        <div class="glass"></div>
+        <div class="glow"></div>
+        <div class="rose-leaves">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="rose-petals">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="content">
+            <p>Happy Rose Day</p>
+        </div>
+        <div class="sparkles">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
 
+    <!-- Hidden Surprise -->
+    <div id="surprise" class="hidden">
+        <h1>🌹 Happy Rose Day, Miral! 🌹</h1>
+    </div>
+
     <script>
+        // Function to show surprise
         function showSurprise() {
             const surprise = document.getElementById('surprise');
             surprise.classList.add('show');
