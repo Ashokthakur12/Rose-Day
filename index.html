@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Rose Day, Miral</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #surprise {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 1s ease;
+        }
+        #surprise.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -15,13 +39,22 @@
         <!-- Hidden surprise section -->
         <div id="surprise" class="hidden">
             <h1>🌹 Happy Rose Day, Miral! 🌹</h1>
-            <img src="https://media-hosting.imagekit.io//9d2d4dd4e7e9424a/1000131914.jpg?Expires=1833473617&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Vi0Syygh6SUqdmlaVRQJShmtTjPadS6L9NZll-afwj4K~h6m-Ygv-RvmIkhbqc8k9kerZANnq5ozmp5D1esWTx9WjKbsgnbfSLnpfv-40GDF1sZDmjpt6mxXqeANC-v9kS7zqC2qyY8kebvaIZxP-aJnkdnZApRUNNW2YFT9NLt7-rFsWufKQH6gtoAAHvI4zM5tvJxJkZwRD5KySntPcl0yHhLYU~trhwhnEFxv~cfDsMDbCHjHjoW86Jb4ETI165s2~6f~4dbOzU3Xjb0vq9Huwct91G-HU3ul4OeTo8j46XIolMfwHn2pyyCJ9gMMEjaO3ZF6wSG4ZqTOOhooNg" alt="Miral's Photo" class="profile">
+            <img src="https://media-hosting.imagekit.io//9d2d4dd4e7e9424a/1000131914.jpg" alt="Miral's Photo" class="profile">
             <h2>Miral</h2>
-            <img src="https://media-hosting.imagekit.io//9d2d4dd4e7e9424a/1000131914.jpg?Expires=1833473617&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Vi0Syygh6SUqdmlaVRQJShmtTjPadS6L9NZll-afwj4K~h6m-Ygv-RvmIkhbqc8k9kerZANnq5ozmp5D1esWTx9WjKbsgnbfSLnpfv-40GDF1sZDmjpt6mxXqeANC-v9kS7zqC2qyY8kebvaIZxP-aJnkdnZApRUNNW2YFT9NLt7-rFsWufKQH6gtoAAHvI4zM5tvJxJkZwRD5KySntPcl0yHhLYU~trhwhnEFxv~cfDsMDbCHjHjoW86Jb4ETI165s2~6f~4dbOzU3Xjb0vq9Huwct91G-HU3ul4OeTo8j46XIolMfwHn2pyyCJ9gMMEjaO3ZF6wSG4ZqTOOhooNg" alt="Rose" class="rose">
             <p>Here's a rose for you, Miral! 🌹</p>
+            
+            <!-- YouTube Video Embed with Animation -->
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/3EplzAeMREA" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        function showSurprise() {
+            const surprise = document.getElementById('surprise');
+            surprise.classList.add('show');
+        }
+    </script>
 </body>
 </html>
