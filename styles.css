@@ -1,47 +1,45 @@
+/* Basic Style for Body */
 body {
-    text-align: center;
     font-family: Arial, sans-serif;
-    background-color: #ffe6e6;
-    color: #b30000;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    margin-top: 100px;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#surprise {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+    margin-top: 20px;
+}
+
+#surprise.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 button {
-    background-color: #ff4d4d;
-    color: white;
+    margin-top: 20px;
     padding: 10px 20px;
-    border: none;
     font-size: 16px;
-    cursor: pointer;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #cc0000;
-}
-
-.hidden {
-    display: none;
-}
-
-#surprise h1 {
-    color: #cc0000;
-    font-size: 24px;
-    margin-top: 20px;
-}
-
-img.profile {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-    border: 3px solid #b30000;
-}
-
-img.rose {
-    width: 100px;
-    margin-top: 10px;
+    background-color: #ff4d94;
 }
