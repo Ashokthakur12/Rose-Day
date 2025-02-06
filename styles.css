@@ -27,7 +27,21 @@ button:hover {
     display: none;
 }
 
-img {
-    width: 150px;
+#surprise h1 {
+    color: #cc0000;
+    font-size: 24px;
     margin-top: 20px;
+}
+
+img.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid #b30000;
+}
+
+img.rose {
+    width: 100px;
+    margin-top: 10px;
 }
